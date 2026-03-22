@@ -3,10 +3,19 @@ import google.generativeai as genai
 
 # --- CẤU HÌNH API ---
 # Tạm thời bạn dán API Key vào đây để chạy thử trên máy.
-# Khi đưa lên mạng, ta sẽ giấu nó đi cho an toàn.
-API_KEY = "AIzaSyA_R4xk7_YWbQ4RBtst0O5-subg13R1CeY"
+# --- CẤU HÌNH API ---
+# Tạm thời bạn dán API Key vào đây để chạy thử trên máy.
+API_KEY = "DÁN_API_KEY_CỦA_BẠN_VÀO_ĐÂY"
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-pro')
+
+# Tuyệt chiêu: Tự động quét và chọn mô hình AI phù hợp nhất
+model_name = "gemini-1.5-flash" # Tên dự phòng
+for m in genai.list_models():
+    if 'generateContent' in m.supported_generation_methods:
+        model_name = m.name # Tự động lấy tên chuẩn xác nhất từ hệ thống Google
+        break
+
+model = genai.GenerativeModel(model_name)
 # --- CẤU HÌNH GIAO DIỆN WEB ---
 st.set_page_config(page_title="La Bàn AI", page_icon="🧭", layout="wide")
 
