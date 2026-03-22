@@ -21,14 +21,14 @@ st.set_page_config(page_title="La Bàn AI", page_icon="🧭", layout="wide")
 
 # Thiết kế Thanh Menu bên trái (Sidebar)
 with st.sidebar:
-    st.image("https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/299328848_493844506078591_8711788181493784680_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=N-RC-BFZ1XcQ7kNvwFWTaRU&_nc_oc=AdrLvHKF448QeELhXlBWxBCrnvsVM_MOenJDNH8DyG9p4o-jsnbi4jj9kaWRiQw68Rc&_nc_zt=23&_nc_ht=scontent.fhan5-8.fna&_nc_gid=F2ofDStMFxvmUB6HuEJ8JA&_nc_ss=7a30f&oh=00_AfxjdAjNEHZRNWUHx45LajKiz1jeJAUuge_9WJvWkJvCUA&oe=69C531A7", width=100) # Logo mượn tạm
+    st.image("https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/299328848_493844506078591_8711788181493784680_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=N-RC-BFZ1XcQ7kNvwFWTaRU&_nc_oc=AdrLvHKF448QeELhXlBWxBCrnvsVM_MOenJDNH8DyG9p4o-jsnbi4jj9kaWRiQw68Rc&_nc_zt=23&_nc_ht=scontent.fhan5-8.fna&_nc_gid=F2ofDStMFxvmUB6HuEJ8JA&_nc_ss=7a30f&oh=00_AfxjdAjNEHZRNWUHx45LajKiz1jeJAUuge_9WJvWkJvCUA&oe=69C531A7", width=500) # Logo mượn tạm
     st.title("Về Dự Án")
     st.info(
         "**La Bàn AI** là dự án STEM thuộc Nhóm 3 (Website/App). "
         "Ứng dụng Trí tuệ nhân tạo để hỗ trợ tâm lý và định hướng nghề nghiệp cho học sinh THPT, "
         "giúp giảm thiểu áp lực đồng trang lứa và rủi ro chọn sai ngành."
     )
-    st.success("Lớp 12B4\n Trường THPT Hòn Gai")
+    st.success("Lớp 12B4 - THPT Hòn Gai")
 
 # Phần nội dung chính (Main Content)
 st.title("🧭 La Bàn AI - Trạm Lắng Nghe & Hướng Nghiệp")
