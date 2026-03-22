@@ -6,8 +6,7 @@ import google.generativeai as genai
 # Khi đưa lên mạng, ta sẽ giấu nó đi cho an toàn.
 API_KEY = "AIzaSyA_R4xk7_YWbQ4RBtst0O5-subg13R1CeY"
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
-
+model = genai.GenerativeModel('gemini-pro')
 # --- CẤU HÌNH GIAO DIỆN WEB ---
 st.set_page_config(page_title="La Bàn AI", page_icon="🧭", layout="wide")
 
