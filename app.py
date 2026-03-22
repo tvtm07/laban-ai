@@ -18,15 +18,7 @@ for m in genai.list_models():
 model = genai.GenerativeModel(model_name)
 # --- CẤU HÌNH GIAO DIỆN WEB ---
 st.set_page_config(page_title="La Bàn AI", page_icon="🧭", layout="wide")
-#  giấu thanh menu và nút GitHub của Streamlit
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            header {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # Thiết kế Thanh Menu bên trái (Sidebar)
 with st.sidebar:
     st.image("https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/299328848_493844506078591_8711788181493784680_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=N-RC-BFZ1XcQ7kNvwFWTaRU&_nc_oc=AdrLvHKF448QeELhXlBWxBCrnvsVM_MOenJDNH8DyG9p4o-jsnbi4jj9kaWRiQw68Rc&_nc_zt=23&_nc_ht=scontent.fhan5-8.fna&_nc_gid=F2ofDStMFxvmUB6HuEJ8JA&_nc_ss=7a30f&oh=00_AfxjdAjNEHZRNWUHx45LajKiz1jeJAUuge_9WJvWkJvCUA&oe=69C531A7", width=500) # Logo mượn tạm
