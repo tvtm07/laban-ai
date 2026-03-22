@@ -5,7 +5,7 @@ import google.generativeai as genai
 # Tạm thời bạn dán API Key vào đây để chạy thử trên máy.
 # --- CẤU HÌNH API ---
 # Tạm thời bạn dán API Key vào đây để chạy thử trên máy.
-API_KEY = "DÁN_API_KEY_CỦA_BẠN_VÀO_ĐÂY"
+API_KEY = "AIzaSyA_R4xk7_YWbQ4RBtst0O5-subg13R1CeY"
 genai.configure(api_key=API_KEY)
 
 # Tuyệt chiêu: Tự động quét và chọn mô hình AI phù hợp nhất
